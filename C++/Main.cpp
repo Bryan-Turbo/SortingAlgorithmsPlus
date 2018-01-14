@@ -12,15 +12,12 @@ vector<int> randomNums(int size)
 {
     vector<int> nums(size);
     int num;
-    int count;
     srand(time(NULL));
     for (int i = 0; i < size; i++)
     {
         num = rand() % size;
         nums[i] = num;
-        count = i;
     }
-    // cout << count << endl;
     return nums;
 }
 
